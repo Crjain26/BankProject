@@ -17,7 +17,7 @@ class Database {
 public:
     Database() {
         driver = sql::mysql::get_mysql_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "root", "Chotu@2603"); // Update with your credentials
+        con = driver->connect("tcp://127.0.0.1:3306", "root", ""); // Update with your credentials
         con->setSchema("BankDB");
     }
 
